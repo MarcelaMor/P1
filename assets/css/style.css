@@ -17,6 +17,9 @@ body {
     display: flex;
     flex-direction: column;
     color: #3a3a3a;
+font-family: "lato" , sans-serif;
+
+
     /*  */
 }
 
@@ -24,6 +27,11 @@ body {
 /* Header */
 header {background-color: rgb(205, 187, 180);
 
+}
+
+h1{
+
+    font-family: "oswald", sans-serif;
 }
 
 /* Main content */
