@@ -25,18 +25,32 @@ font-family: "lato" , sans-serif;
 
 
 /* Header */
-header {background-color: rgb(205, 187, 180);
-
+header {background-color: #ffffff
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    
 }
 
+header a {
+
+ text-decoration: none;
+ color: inherit
+ letter-spacing: 2px;
+ color: #252525;
+
+}
 h1{
 
-    font-family: "oswald", sans-serif;
+    font-family: "oswald", sans;
+    text-transform: uppercase;
 }
 
 /* Main content */
 main {
-    background-color: rgb(9, 57, 73);
+    background-color: rgb(64, 120, 139);
     /*make main element take up any surplus to push footer down*/
     flex: 1 0 auto;
 
