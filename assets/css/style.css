@@ -28,7 +28,7 @@ header {background-color: rgb(86, 36, 16);
 
 /* Main content */
 main {
-    background-color: lightblue;
+    background-color: rgb(9, 57, 73);
     /*make main element take up any surplus to push footer down*/
     flex: 1 0 auto;
 
