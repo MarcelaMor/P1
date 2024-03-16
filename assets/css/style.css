@@ -3,7 +3,7 @@
 
 
 /* asterisk wildcard selector to override default styles added by the browser */
-{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -48,8 +48,8 @@ h1 {
     list-style-type: none;
 }
 
-#menu >li {
-   margin-bottom: 1em;
+#menu > li {
+    margin-bottom: 1em;
 }
 
 
