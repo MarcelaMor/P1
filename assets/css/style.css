@@ -3,12 +3,10 @@
 
 
 /* asterisk wildcard selector to override default styles added by the browser */
-
 {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
 
 /* General styles */
@@ -18,8 +16,6 @@ body {
     flex-direction: column;
     color: #3a3a3a;
     font-family: 'Lato' , sans-serif;
-
-
     /*  */
 }
 
@@ -41,7 +37,7 @@ header a {
     color: #252525;
 }
 
-h1{
+h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     list-style-type: none;
