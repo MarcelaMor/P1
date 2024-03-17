@@ -52,6 +52,14 @@ h1 {
     margin-bottom: 1em;
 }
 
+.active {
+    border-bottom: 1px #0c0808;
+}
+
+/* navbar syles dropdown toggle */
+nav {
+    position: absolute;
+}
 
 /* Main content */
 main {
