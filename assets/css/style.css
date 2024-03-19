@@ -27,7 +27,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 5px 5px #3a3a3a;
+    box-shadow: 0 2px 2px #3a3a3a;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -93,46 +93,64 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: orange;
+#social-networks {
+
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    
+}
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
 }
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+}
     /* Header */
-nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: 1rem;
-}
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
 
-  #menu {
-    display: flex;
-  }  
-#menu > li {
-    padding-left: 1rem;
-}
+    #menu {
+        display: flex;
+    }  
 
-.nav-toggle-label {
-     display: none;
-}
+    #menu > li {
+        padding-left: 1rem;
+    }
 
-#logo {
-font-size: 280%;
-line-height: 75px;
-margin: 0.05rem;
-}
-/* Main content */
-main {
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 200%;
+        line-height: 50px;
+        margin: 0.05rem;
+    }
+
+    /* Main content */
+
+    main {
     /* Push the main content so it accomodates larger header */
-margin-top: 79px;
-}
+        margin-top: 75px;
 
-/* Larger devices logo for laptops and desktops */
- @media screen and (min-width:  992px) {
-     #menu a:hover{
-        border-bottom: 2px solid #3a3a3a;
- }
+    }
 
-}
+    /* Larger devices logo for laptops and desktops */
+    @media screen and (min-width:  992px) {
+        #menu a:hover{
+            border-bottom: 2px solid #3a3a3a;
+        }
+
+    }
