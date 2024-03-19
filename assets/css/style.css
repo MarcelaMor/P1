@@ -46,8 +46,8 @@ h1 {
 }
 
 #menu {
-    font-size: 115%;
-    letter-spacing: 5px;
+    font-size: 110%;
+    letter-spacing: 4px;
     list-style-type: none;
 }
 
@@ -94,21 +94,19 @@ main {
 
 /* Footer */
 #social-networks {
-
     text-align: center;
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
-    list-style-type: none;
-    
-}
+    list-style-type: none;}
+
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
 }
 
-}
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 }
@@ -134,23 +132,26 @@ main {
     }
 
     #logo {
-        font-size: 200%;
-        line-height: 50px;
-        margin: 0.05rem;
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 .05rem;
     }
 
     /* Main content */
 
     main {
     /* Push the main content so it accomodates larger header */
-        margin-top: 75px;
+        margin-top: 79px;
 
     }
 
     /* Larger devices logo for laptops and desktops */
-    @media screen and (min-width:  992px) {
+    @media screen and (min-width: 992px) {
         #menu a:hover{
-            border-bottom: 2px solid #3a3a3a;
+            border-bottom: 1px solid #3a3a3a;
         }
 
     }
+
+
+
