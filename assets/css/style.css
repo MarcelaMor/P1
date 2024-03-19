@@ -129,4 +129,10 @@ main {
 margin-top: 79px;
 }
 
+/* Larger devices logo for laptops and desktops */
+ @media screen and (min-width:  992px) {
+     #menu a:hover{
+        border-bottom: 2px solid #3a3a3a;
+ }
+
 }
