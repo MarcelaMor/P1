@@ -1,7 +1,7 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
-/* Asterisk wildcard selector to override default styles added by the browser */
+/* Asterisk wildcard selector to override default styles added by browser */
 * {
     padding: 0;
     margin: 0;
@@ -84,13 +84,21 @@ nav {
 
 /* Main content */
 main {
-    background-color: rgb(11, 97, 125);
-    /* Make main element take up any surplus space to push footer down */
+   
+    /* Make main element take up space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
 
-/* Footer */
+/* Hero section */
+#hero {
+
+    height: 600px;
+    width: 100%;
+    background: url("../images/bjj-inner-107156.jpg") no-repeat center center/cover;
+
+}
+
 /* Footer */
 #social-networks {
     text-align: center;
@@ -106,7 +114,7 @@ main {
     color: #3a3a3a;
     }
 
-/* Media query, tablets and larger (768px and up) */
+/* Media query for tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
