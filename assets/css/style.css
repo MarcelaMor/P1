@@ -224,7 +224,7 @@ main {
     
     /* Reasons section */
 
-    #benefits 
+    #benefits {
         display: flex;
         flex-direction: row;
     }
