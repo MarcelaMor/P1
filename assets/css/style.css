@@ -113,7 +113,7 @@ main {
 
 #cover-text>h2,
 #cover-text>h3 {
-    color: #ffffff;
+    color: #252525;
 }
 
 #circle-cover-bg {
@@ -135,7 +135,38 @@ main {
     justify-content: center;
 }
 
-        /* Footer */
+
+    /* Schedule background pic */
+#times { 
+    background: url("../images/bjj-inner-107156.jpg") no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#times div {
+    color: #e9e9ef;
+    background-color: rgba(125, 26, 24, 0.7);
+    padding: 15px;
+    text-align: center;
+
+    /* Will not wrap on screens smaller than 400 px wide 
+    each div will expand so it can fill up the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+
+    /* Creates a grid of schedule divs over background image */
+    border: 2px solid white
+
+}
+
+#times h3 {
+ /* overide heading color set in general styles */
+    color: rgb(14, 2, 2);
+
+}
+
+
+    /* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -192,8 +223,19 @@ main {
         right: 50px;
     }
 
-
     /* Reasons section */
+
+    #reasons {
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    #reasons h2 {
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 225%;
+    }
+    
     #benefits-physical,
     #benefits-mental {
         display: flex;
@@ -205,7 +247,6 @@ main {
     #benefits-metal > div {
         width: 75%;
    }
-
 
     #benefits-mental > div {
         text-align: end;
