@@ -28,11 +28,11 @@ h3 {
 }
 
 .hidden-heading {
-display: none;
+    display: none;
 
 }
 
-    /* Header */
+/* Header */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -127,12 +127,12 @@ main {
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
-     /* Making the square image to a circle */
+    /* Making the square image to a circle */
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
 
-    }
+}
 
 #benefits-image {
     display: flex;
@@ -141,13 +141,14 @@ main {
 }
 
 
-    /* Schedule background pic */
-#times { 
+/* Schedule background pic */
+#times {
     background: url("../images/bjj-inner-107156.jpg") no-repeat center/cover;
     display: flex;
     flex-wrap: wrap;
 
 }
+
 #times div {
     color: #e9e9ef;
     background-color: rgba(125, 26, 24, 0.7);
@@ -161,16 +162,24 @@ main {
 
     /* Creates a grid of schedule divs over background image */
     border: 2px solid white
-
 }
 
 #times h3 {
- /* overide heading color set in general styles */
+    /* overide heading color set in general styles */
     color: rgb(14, 2, 2);
 }
 
+/* Gallery page */
+#gallery img {
+    width: 100%;
+    line-height: 1em;
+}
 
-    /* Footer */
+#gallery {
+    line-height: 0;
+}
+
+/* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -185,7 +194,7 @@ main {
     color: #3a3a3a;
 }
 
-    /* Media query: tablets and larger (768px and up) */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
     /* Header */
@@ -233,13 +242,13 @@ main {
         width: 90%;
         margin: 20px auto;
     }
-    
+
     #reasons h2 {
         margin-bottom: 20px;
         text-align: center;
         font-size: 225%;
     }
-    
+
     #benefits-physical,
     #benefits-mental {
         display: flex;
@@ -247,15 +256,15 @@ main {
         width: 100%;
     }
 
-    #benefits-physical > div,
-    #benefits-metal > div {
+    #benefits-physical>div,
+    #benefits-metal>div {
         width: 75%;
-   }
+    }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
-   }
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -266,15 +275,15 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-    
+
     /* Reasons section */
 
     #benefits {
         display: flex;
         flex-direction: row;
     }
-    
-    #benefits > div {
+
+    #benefits>div {
         flex: 1;
     }
 
@@ -286,11 +295,11 @@ main {
         order: 1;
     }
 
-    #benefits-mental > div {
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div {
+    #benefits-physical>div {
         align-self: flex-end;
     }
 }
