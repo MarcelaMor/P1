@@ -27,7 +27,12 @@ h3 {
     color: #252525;
 }
 
-/* Header */
+.hidden-heading {
+display: none;
+
+}
+
+    /* Header */
 header {
     background-color: #ffffff;
     padding: 0 1rem;
@@ -162,7 +167,6 @@ main {
 #times h3 {
  /* overide heading color set in general styles */
     color: rgb(14, 2, 2);
-
 }
 
 
