@@ -182,6 +182,7 @@ main {
 }
 
 /* Footer */
+
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -196,10 +197,9 @@ main {
     color: #3a3a3a;
 }
 
-#signup {
+#signup_section {
     background-image: url("../images/bjjmatform2.jpg");
     background-size: cover;
-
     background-position: 75%;
     padding: 20px 10% 0 10%;
     flex-grow: 1;
@@ -207,21 +207,50 @@ main {
 
 #signup_bg {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 50px;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 
-#signup_bg>h1,h2 {
+#signup_bg>h1 {
     color: rgb(231, 231, 231);
 }
 
-#registration-form {
-    font-size: 1.5rem;
-    color: white;
+#signup_bg>h2 {
+    color: rgb(231, 231, 231);
 }
 
-.text-input{
-    color: red;
+
+#registration-form {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding: 30px;
 }
+
+.text-input {
+    color: rgb(255, 255, 255);
+    background-color: #fafafa00;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+    margin: 5px 0 20px 0;
+    height: 25px;
+    width: 100%;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.join-button {
+    margin-top: 20px;
+    border-radius: 2px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: white;
+    color: black;
+}
+
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {
@@ -306,6 +335,34 @@ main {
     #photos {
         column-count: 3;
     }
+
+    #signup_section {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup_bg {
+        background-color: rgba(0, 0, 0, 0.6);
+        /* padding: 30px;
+        margin-bottom: 20px; */
+    }
+
+    #registration-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover {
+        border-color: black;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #ac0000;
+    }
+
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -316,6 +373,12 @@ main {
 
     #photos {
         column-count: 4;
+    }
+
+    #signup_bg {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        margin-bottom: 20px;
     }
 }
 
@@ -346,5 +409,11 @@ main {
 
     #benefits-physical>div {
         align-self: flex-end;
+    }
+
+    #signup_bg {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        margin-bottom: 20px;
     }
 }

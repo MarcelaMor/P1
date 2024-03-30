@@ -35,36 +35,33 @@
   </header>
 
   <!-- My content -->
-  <main id="signup">
-    <div id="signup_bg">
-      <h1><i class="fa-solid fa-handshake-simple"></i>ONE OF US! ONE OF US!</h1>
-      <h2>Come and roll with us</h2>
-      <section id="registration">
-        <form id="registration-form" method="POST" action="https://formdump.codeinstitute.net">
-
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="first_name" class="text-input" required><br>
-
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="last_name" class="text-input" required><br>
-
-          <label for="email">Email Address</label>
-          <input type="text" id="email" name="email_address" class="text-input" required><br><br>
-
-          <h4>What's your rolling preference?</h4><br>
-          <div class="radio-buttons">
-            <div><label for="gi">Gi</label><input type="radio" name="rolling_preference" id="gi" value="gi_prefered"
-                required></div>
-            <div><label for="nogi">No-Gi</label><input type="radio" name="rolling_preference" id="nogi"
-                value="no_gi_prefered" required></div>
-            <div><label for="mixed">Mixed</label><input type="radio" name="rolling_preference" id="mixed"
-                value="mixed_prefered" required checked></div>
-          </div>
-          <button type="submit" class="join-button">I wanna roll!</button>
-
-        </form>
-      </section>
-    </div>
+  <main>
+    <section id="signup_section">
+      <div id="signup_bg">
+        <h1><i class="fa-solid fa-handshake-simple"></i>ONE OF US! ONE OF US!</h1>
+        <h2>Come and roll with us</h2>
+        <section id="registration">
+          <form id="registration-form" method="POST" action="https://formdump.codeinstitute.net">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="first_name" class="text-input" required><br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="last_name" class="text-input" required><br>
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email_address" class="text-input" required><br><br>
+            <h4>What's your rolling preference?</h4><br>
+            <div class="radio-buttons">
+              <div><label for="gi">Gi</label><input type="radio" name="rolling_preference" id="gi" value="gi_prefered"
+                  required></div>
+              <div><label for="nogi">No-Gi</label><input type="radio" name="rolling_preference" id="nogi"
+                  value="no_gi_prefered" required></div>
+              <div><label for="mixed">Mixed</label><input type="radio" name="rolling_preference" id="mixed"
+                  value="mixed_prefered" required checked></div>
+            </div>
+            <button type="submit" class="join-button">I wanna roll!</button>
+          </form>
+        </section>
+      </div>
+    </section>
 
   </main>
 
