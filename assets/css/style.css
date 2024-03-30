@@ -94,6 +94,8 @@ main {
     /* Make main element take up surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hero section */
@@ -192,6 +194,33 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+#signup {
+    background-image: url("../images/bjjmatform2.jpg");
+    background-size: cover;
+
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+}
+
+#signup_bg {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+}
+
+#signup_bg>h1,h2 {
+    color: rgb(231, 231, 231);
+}
+
+#registration-form {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.text-input{
+    color: red;
 }
 
 /* Media query: large or landscape phones (576px and up) */
