@@ -10,53 +10,29 @@
 
 /* General styles */
 body {
-    
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-#logo{
-    font-family: "Carter One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    color: #252525;
-}
-
-/* h1{
-    font-family: "Carter One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    text-transform: uppercase;
-    letter-spacing: 2 px;
-    color: #252525;
-} */
-
-/* .hidden-heading {
-    display: none;
-
-} */
-
-/* Header */
-
 .topnav {
     overflow: hidden;
-    background-color: #757575;
-  
-  }
+    background-color: #8c1816b3;
 
-  #nav-centered {
+}
+
+#nav-centered {
     margin: auto;
     width: 50%;
-  }
+}
 
-  #links {
-    padding-left: 10%;
-  }
-    
-  .topnav a {
+#links {
+    display: flex;
+    justify-content: center;
+}
+
+.topnav a {
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -64,102 +40,42 @@ body {
     text-decoration: none;
     font-size: 17px;
     font-family: "Carter One", system-ui;
-  }
-  
-  .topnav a:hover {
+}
+
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  .topnav a.active {
-    background-color:#8c1816b3;
+}
+
+.topnav a.active {
+    background-color: #8c1816b3;
     ;
     color: white;
-  }
+}
 
-/* .topnav {
-    overflow: hidden;
-    background-color: #333;
-    padding: 14px 14px;
-    z-index: 99;
-    width: 57%;
-    box-shadow: 0 2px 2px #3a3a3a;
-} */
-
-/* #logo-bg {
-    background-color: #e9e9ef;
-    margin: 0% 0% 0% 0%;
-} */
-
-/* header a {
-    text-decoration: none;
-    color: inherit;
-} */
-
-/*
-#menu {
-    //not logo text//
+#logo {
     font-family: "Carter One", system-ui;
-    padding: 2px 0px 0px 20px;
-    font-size: 1.2rem;
-    letter-spacing: 4px;
-    list-style-type: disclosure-closed;
-    display: flex;
-}*/
-
-/* #menu>li {
-    margin-bottom: 1em;
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-} */
-
-/* Navbar styles with dropdown toggle */
-/* nav {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
-} */
-
-/* Nav toggle */
-/* #nav-toggle:checked~nav {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    font-size: 2rem;
-} */
-
-/* Main content */
-main {
-    /* Make main element take up surplus space to push footer down */
-    flex: 1 0 auto;
-    margin-top: 47px;
-    display: flex;
-    flex-direction: column;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #252525;
 }
 
 /* Hero section */
-#hero {
-    height: 600px;
-    width: 100%;
-    background: url("../images/bjjhero.jpg") no-repeat center center/cover;
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bjjhero.jpg");
+    height: 35rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 
-#cover-text {
+.hero-text {
     /* Final rgba value sets the opacity to semi-transparent */
-    background-color: rgba(140, 24, 22, 0.7);
+    background-color: #8c1816b3;
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -341,11 +257,7 @@ main {
         margin: 0 0.5rem;
     } */
 
-    /* Main content */
-    main {
-        /* Push main content down to accommodate larger header */
-        margin-top: 79px;
-    }
+
 
     /* Hero image */
     #cover-text {
