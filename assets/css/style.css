@@ -63,10 +63,10 @@ body {
     color: #252525;
 }
 
-/* Hero section */
+/* Hero div */
 .hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bjjhero.jpg");
-    height: 35rem;
+    height: 83vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,15 +74,13 @@ body {
 }
 
 .hero-text {
-    /* Final rgba value sets the opacity to semi-transparent */
-    background-color: #8c1816b3;
-    font-size: 130%;
-    position: absolute;
-    bottom: 30px;
-    width: 80%;
-    min-height: 200px;
-    padding-top: 40px;
-    padding-left: 10px;
+    /* background-color: #8c1816b3; */
+    font-size: 2rem;
+    padding-top: 6rem;
+    color: white;
+    display: grid;
+    align-content: stretch;
+    justify-content: center;
 }
 
 #cover-text>h2,
