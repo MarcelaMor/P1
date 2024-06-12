@@ -1,5 +1,5 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Caveat:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Caveat:wght@400..700&display=swap");
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
@@ -10,8 +10,13 @@
 
 /* General styles */
 body {
-
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
 }
@@ -67,7 +72,8 @@ body {
 
 /* Hero div */
 .hero-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bjjhero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/bjjhero.jpg");
     height: 83vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,13 +82,19 @@ body {
 }
 
 .hero-text {
-    /* background-color: #8c1816b3; */
     font-size: 2rem;
     padding-top: 6rem;
     color: white;
     display: grid;
     align-content: stretch;
     justify-content: center;
+}
+
+.button-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
 }
 
 #button-why {
@@ -97,46 +109,62 @@ body {
     font-size: 16px;
     font-family: "Carter One", system-ui;
     width: 9rem;
-    margin: 2rem 31rem;
     transition-duration: 0.3s;
-} 
+}
 
 #button-why:hover {
     background-color: #61100fb3;
 }
 
-/* 
-#cover-text>h2,
-#cover-text>h3 {
-    color: #252525;
-} */
+/* Text Section */
 
-#circle-cover-bg {
+.question {
+    grid-area: 1 / 2 / 2 / 7;
+    padding-top: 5.5rem;
+    font-family: "Caveat", system-ui;
+    text-align: center;
+    font-size: 1.7rem;
+}
 
+#benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 0.3fr 0.3fr 1fr;
+    /* grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr; */
+    grid-gap: 0em 0em;
+    background: linear-gradient(0deg, #ffffff 0%, #cca5a5 100%);
+    margin-bottom: 14rem;
+}
+
+.benefits-txt {
+    grid-area: 2 / 4 / 4 / 7;
+    text-align: right;
+    display: inline-grid;
+}
+
+.benefits-img {
+    grid-area: 2 / 2 / 3 / 4;
     background: url("../images/4_Classes_BJJ_Female.jpg") no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
-    margin-bottom: 20px;
     /* Making the square image to a circle */
     border-radius: 50%;
     max-width: 300px;
     max-height: 300px;
-
+    justify-self: center;
+    margin-top: 4rem;
 }
-
-#benefits-image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /* Schedule background pic */
 #times {
     background: url("../images/bjj-inner-107156.jpg") no-repeat center/cover;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 #times div {
@@ -151,7 +179,7 @@ body {
     flex-grow: 1;
 
     /* Creates a grid of schedule divs over background image */
-    border: 2px solid white
+    border: 2px solid white;
 }
 
 #times h3 {
@@ -207,7 +235,6 @@ body {
     color: rgb(231, 231, 231);
 }
 
-
 #registration-form {
     font-size: 1.5rem;
     color: rgb(255, 255, 255);
@@ -237,167 +264,4 @@ body {
     font-size: 100%;
     background-color: white;
     color: black;
-}
-
-
-/* Media query: large or landscape phones (576px and up) */
-/* @media screen and (min-width: 576px) {
-    #photos {
-        column-count: 2;
-        column-gap: 0;
-    }
-} */
-
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-
-    /* Header */
-    /* nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    } */
-
-    /* #menu {
-        display: flex;
-    }
-
-    #menu>li {
-        padding-left: 1rem;
-    } */
-
-    /* .nav-toggle-label {
-        display: none;
-    } */
-
-    /* #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
-    } */
-
-
-
-    /* Hero image */
-    #cover-text {
-        width: 300px;
-        right: 50px;
-    }
-
-    /* Reasons section */
-
-    #reasons {
-        width: 90%;
-        margin: 20px auto;
-    }
-
-    #reasons h2 {
-        margin-bottom: 20px;
-        text-align: center;
-        font-size: 225%;
-    }
-
-    #benefits-physical,
-    #benefits-mental {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #benefits-physical>div,
-    #benefits-metal>div {
-        width: 75%;
-    }
-
-    #benefits-mental>div {
-        text-align: end;
-        align-self: flex-end;
-    }
-
-    #photos {
-        column-count: 3;
-    }
-
-    #signup_section {
-        background-position: center;
-        position: relative;
-    }
-
-    #signup_bg {
-        background-color: rgba(0, 0, 0, 0.6);
-        /* padding: 30px;
-        margin-bottom: 20px; */
-    }
-
-    #registration-form {
-        max-width: 400px;
-        position: absolute;
-        left: 10%;
-        top: 150px;
-    }
-
-    .text-input:hover {
-        border-color: black;
-    }
-
-    .join-button:hover {
-        background-color: #fafafa;
-        color: #ac0000;
-    }
-
-}
-
-/* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    /* #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    } */
-
-    #photos {
-        column-count: 4;
-    }
-
-    #signup_bg {
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 30px;
-        margin-bottom: 20px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    /* Reasons section */
-
-    #benefits {
-        display: flex;
-        flex-direction: row;
-    }
-
-    #benefits>div {
-        flex: 1;
-    }
-
-    #benefits-image {
-        order: 0
-    }
-
-    #benefits-mental {
-        order: 1;
-    }
-
-    #benefits-mental>div {
-        align-self: flex-start;
-    }
-
-    #benefits-physical>div {
-        align-self: flex-end;
-    }
-
-    #signup_bg {
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 30px;
-        margin-bottom: 20px;
-    }
 }

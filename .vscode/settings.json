@@ -25,7 +25,7 @@
    "terminal.integrated.gpuAcceleration": "canvas",
    "editor.defaultFormatter": "HookyQR.beautify",
    "[css]": {
-      "editor.defaultFormatter": "vscode.css-language-features"
+      "editor.defaultFormatter": "nesterenok.js-beautify-extentions"
    },
    "[html]": {
       "editor.defaultFormatter": "nesterenok.js-beautify-extentions"
