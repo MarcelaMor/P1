@@ -19,11 +19,12 @@ body {
 .topnav {
     overflow: hidden;
     background-color: #8c1816b3;
-
+    padding-bottom: 0.5rem;
 }
 
 #nav-centered {
     margin: auto;
+    margin-top: -1rem;
     width: 50%;
 }
 
@@ -40,17 +41,18 @@ body {
     float: left;
     padding: 14px 16px;
     text-decoration: none;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
 }
 
 .topnav a:hover {
-    background-color: #61100fb3;
+    background-color: #ff7b7ad1;
+    border-radius: 3rem 0rem 3rem 0rem;
 }
 
 .topnav a.active {
     background-color: #8c1816b3;
-    ;
     color: white;
+    border-radius: 3rem 0rem 3rem 0rem;
 }
 
 #logo {
@@ -86,14 +88,16 @@ body {
 #button-why {
     background-color: #8c1816b3;
     border: none;
+    border-radius: 1rem;
     color: white;
     padding: 16px 3px 18px 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 7rem;
-    margin: 2rem 26rem;
+    font-family: "Carter One", system-ui;
+    width: 9rem;
+    margin: 2rem 31rem;
     transition-duration: 0.3s;
 } 
 
