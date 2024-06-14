@@ -1,110 +1,60 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Marcela Morales,
+# Grappling
+![image](https://github.com/MarcelaMor/P1grappling/assets/159925451/cacf43d6-5bf0-4919-b8ef-46fe84a3722f)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+In today’s fast-paced world, finding a balance between physical fitness and mental well-being is crucial. Grappling offers a unique blend of intense physical training and mental fortitude. 
+This website aims to bring together individuals passionate about grappling or/and BJJ, providing them with a supportive community, expert guidance, and resources to improve both their physical and mental health.
+## Features
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+#### Schedule 
+The Schedule section of the homepage provides users with quick and easy access to essential information about upcoming lessons. Knowing a club's schedule is often one of the first things a prospective student looks for. With this feature, users can plan their visits, attend trial classes, and make informed decisions about their training commitments.
+![image](https://github.com/MarcelaMor/P1grappling/assets/159925451/31c6404b-4945-4a1c-96e2-6d23623f232a)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+#### Gallery
+The Gallery section is a crucial addition, allowing website users to view real photos from the club's training sessions, sparring matches, and competitions. This visual insight fosters a stronger connection and encourages engagement. Conveniently located in the navigation bar, it ensures easy access for visitors.
+![image](https://github.com/MarcelaMor/P1grappling/assets/159925451/c5d19d0d-a5b6-4891-9f18-736c8a14f52b)
 
-`python3 -m http.server`
+#### Join
+Our Join page is your gateway to signing up and diving into the action. Whether you're into BJJ, no-gi, or want to mix it up, the choice is yours. And hey, why not sign up your kid too? Conveniently nestled in the navigation bar, it's as easy to find as your next favorite submission move.
+![image](https://github.com/MarcelaMor/P1grappling/assets/159925451/c6ba226b-13ea-43cd-9036-b92ff492da38)
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+#### Footer
+The footer is a sleek and steady feature on every page, with links to the club's social media profiles so you can connect with us faster than a flying armbar.
+![image](https://github.com/MarcelaMor/P1grappling/assets/159925451/afc005a2-3b4e-4dac-8559-4ad3a1e9e8d8)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+## Bugs
+![image](https://github.com/MarcelaMor/P1grappling/assets/159925451/de185603-2193-4bcb-9f93-1811420a965e)
 
-Another blue button should appear to click: _Open Browser_.
+Those images mentioned above are insterted as "background-image" since i had more editing flexibility doing it that way.
+The drawback to that is not having an "alt" text. I found an article mentioning a work-around as can be seen here below.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![image](https://github.com/MarcelaMor/P1grappling/assets/159925451/030faf2c-ce30-4b2d-9e64-2bd388bd1eaa)
 
-To log into the Heroku toolbelt CLI:
+It doesn't pass the W3C test though but I do believe it's better with any text than none.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Deployment
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Deploying for the first time on github can be a bit difficult without pointers.
+Navigation is messy in here so here's a picture on where to find it.
+![image](https://github.com/MarcelaMor/P1grappling/assets/159925451/0f66f2cc-8520-4f81-a56a-28be93ec029e)
 
-------
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Credits
 
-**September 20 2023:** Update Python version to 3.9.17.
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav_centered
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_topnav
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+https://www.w3schools.com/howto/howto_css_hero_image.asp
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+https://www.w3schools.com/csS/css3_buttons.asp
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_center-flex_btn
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+https://css-grid-layout-generator.pw/
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+https://codepen.io/una/pen/YzpgYRR
