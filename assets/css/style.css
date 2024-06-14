@@ -404,6 +404,9 @@ main {
   justify-content: flex-start;
   list-style-type: none;
   background-color: #2d0808;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 #social-networks i {
@@ -417,7 +420,6 @@ main {
 }
 
 .footer-text {
-  color: white;
-  padding-left: 77vw;
-  align-content: center;
+  padding-left: 10vw;
+  color: #693a3a;
 }
