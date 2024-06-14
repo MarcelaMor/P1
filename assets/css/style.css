@@ -1,410 +1,402 @@
 /* Google fonts import */
-@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Caveat:wght@400..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Caveat:wght@400..700&display=swap');
 
 :root {
-    --numDays: 5;
-    --numHours: 10;
-    --timeHeight: 60px;
-    --calBgColor: #fff1f8;
-    --eventBorderColor: #f2d3d8;
-    --eventColor1: #ffd6d1;
-    --eventColor2: #fafaa3;
-    --eventColor3: #e2f8ff;
-    --eventColor4: #d1ffe6;
+  --numDays: 5;
+  --numHours: 10;
+  --timeHeight: 60px;
+  --calBgColor: #fff1f8;
+  --eventBorderColor: #f2d3d8;
+  --eventColor1: #d1e7ff;
+  --eventColor2: #faa3a3;
+  --eventColor3: #ffe2f6;
+  --eventColor4: #d3d1ff;
 }
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* General styles */
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, sans-serif;
 }
 
 main {
-    flex: 1 0 auto;
-    display: flex;
-    flex-direction: column;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .topnav {
-    overflow: hidden;
-    background-color: #8c1816b3;
-    padding-bottom: 0.5rem;
+  overflow: hidden;
+  background-color: #8c1816b3;
+  padding-bottom: 0.5rem;
 }
 
 #nav-centered {
-    margin: auto;
-    margin-top: -1rem;
-    width: 50%;
+  margin: auto;
+  margin-top: -1rem;
+  width: 50%;
 }
 
 #links {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .topnav a {
-    font-family: "Carter One", system-ui;
-    color: #f2f2f2;
-    font-size: 17px;
-    text-align: center;
-    float: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    transition-duration: 0.3s;
+  font-family: 'Carter One', system-ui;
+  color: #f2f2f2;
+  font-size: 17px;
+  text-align: center;
+  float: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-duration: 0.3s;
 }
 
 .topnav a:hover {
-    background-color: #ff7b7ad1;
-    border-radius: 3rem 0rem 3rem 0rem;
+  background-color: #ff7b7ad1;
+  border-radius: 3rem 0rem 3rem 0rem;
 }
 
 .topnav a.active {
-    background-color: #8c1816b3;
-    color: white;
-    border-radius: 3rem 0rem 3rem 0rem;
+  background-color: #8c1816b3;
+  color: white;
+  border-radius: 3rem 0rem 3rem 0rem;
 }
 
 #logo {
-    font-family: "Carter One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #252525;
+  font-family: 'Carter One', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #252525;
 }
 
-/* Hero div */
+/* HERO SECTION */
+
+.hero-section {
+  height: 100vw;
+}
+
 .hero-img {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../images/bjjhero.jpg");
-    height: 83vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/bjjhero.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero-text {
-    font-size: 2rem;
-    padding-top: 6rem;
-    color: white;
-    display: grid;
-    align-content: stretch;
-    justify-content: center;
+  font-family: 'Carter One';
+  font-size: 4rem;
+  color: white;
+  display: grid;
+  align-content: stretch;
+  justify-content: center;
 }
 
 .button-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
 }
 
-#button-why {
-    background-color: #8c1816b3;
-    border: none;
-    border-radius: 1rem;
-    color: white;
-    padding: 16px 3px 18px 0px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-family: "Carter One", system-ui;
-    width: 9rem;
-    transition-duration: 0.3s;
+#tellmemore-button {
+  background-color: #8c1816b3;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  padding: 16px 3px 18px 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 2.3rem;
+  font-family: 'Carter One', system-ui;
+  transition-duration: 0.3s;
+  width: 30vw;
+  height: 11vw;
 }
 
 #button-why:hover {
-    background-color: #61100fb3;
+  background-color: #61100fb3;
 }
 
-/* Text Section */
+/* BENEFITS SECTION */
 
-.question {
-    grid-area: 1 / 2 / 2 / 7;
-    padding-top: 5.5rem;
-    font-family: "Caveat", system-ui;
-    text-align: center;
-    font-size: 1.7rem;
+#benefits-section {
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#benefits {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.benefits-heading > h1 {
+  font-family: 'Carter One';
+  font-size: xxx-large;
+  margin-bottom: 10vw;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.5fr 0.5fr 0.3fr 0.3fr 1fr;
-    /* grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr; */
-    grid-gap: 0em 0em;
-    background: linear-gradient(0deg, #ffffff 0%, #cca5a5 100%);
-    margin-bottom: 14rem;
-}
-
-.benefits-txt {
-    grid-area: 2 / 4 / 4 / 7;
-    text-align: right;
-    display: inline-grid;
+.textimg-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .benefits-img {
-    grid-area: 2 / 2 / 3 / 4;
-    background: url("../images/4_Classes_BJJ_Female.jpg") no-repeat top center / cover;
-    height: 90vw;
-    width: 90vw;
-    /* Making the square image to a circle */
-    border-radius: 50%;
-    max-width: 300px;
-    max-height: 300px;
-    justify-self: center;
-    margin-top: 4rem;
+  background: url('../images/4_Classes_BJJ_Female.jpg');
+  border-radius: 50%;
+  background-size: 80vw;
+  height: 46vw;
+  width: 46vw;
+  background-repeat: no-repeat;
+  background-position: -20vw 0vw;
 }
 
-/* Schedule background pic */
-#times {
-    background: url("../images/bjj-inner-107156.jpg") no-repeat center/cover;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#times div {
-    color: #e9e9ef;
-    background-color: rgba(125, 26, 24, 0.7);
-    padding: 15px;
-    text-align: center;
-
-    /* Will not wrap on screens smaller than 400 px wide 
-    each div will expand so it can fill up the available space on its row */
-    flex-basis: 200px;
-    flex-grow: 1;
-
-    /* Creates a grid of schedule divs over background image */
-    border: 2px solid white;
-}
-
-#times h3 {
-    /* overide heading color set in general styles */
-    color: rgb(14, 2, 2);
-}
-
-/* Gallery page */
-#gallery img {
-    width: 100%;
-    line-height: 1em;
-}
-
-#gallery {
-    line-height: 0;
-}
-
-/* Footer */
-
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-}
-
-#social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: #3a3a3a;
-}
-
-#signup_section {
-    background-image: url("../images/bjjmatform2.jpg");
-    background-size: cover;
-    background-position: 75%;
-    padding: 20px 10% 0 10%;
-    flex-grow: 1;
-}
-
-#signup_bg {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 30px;
-    margin-bottom: 20px;
-}
-
-#signup_bg>h1 {
-    color: rgb(231, 231, 231);
-}
-
-#signup_bg>h2 {
-    color: rgb(231, 231, 231);
-}
-
-#registration-form {
-    font-size: 1.5rem;
-    color: rgb(255, 255, 255);
-    padding: 30px;
-}
-
-.text-input {
-    color: rgb(255, 255, 255);
-    background-color: #fafafa00;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-    margin: 5px 0 20px 0;
-    height: 25px;
-    width: 100%;
-}
-
-.radio-buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.join-button {
-    margin-top: 20px;
-    border-radius: 2px;
-    padding: 15px 32px;
-    font-size: 100%;
-    background-color: white;
-    color: black;
+.benefits-text {
+  padding: 0vw 15vw 0vw 5vw;
 }
 
 .calendar {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: auto 1fr;
-    margin: 2rem;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto 1fr;
+  margin: 2rem;
+}
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("../images/bjjhero.jpg");
-    height: 83vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
+.calendar-bgimg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/bjjhero.jpg');
+  /* height: 83vh; */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 335vw;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .timeline {
-    display: grid;
-    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+  display: grid;
+  grid-template-rows: repeat(var(--numHours), var(--timeHeight));
 }
 
 .days {
-    display: grid;
-    grid-column: 2;
-    gap: 5px;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: grid;
+  grid-column: 2;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
 .events {
-    display: grid;
-    grid-template-rows: repeat(var(--numHours), var(--timeHeight));
-    border-radius: 5px;
-    background: var(--calBgColor);
+  display: grid;
+  grid-template-rows: repeat(var(--numHours), var(--timeHeight));
+  border-radius: 5px;
+  background: #fff1f18c;
 }
 
 /* // Place on Timeline */
+
 .start-10 {
-    grid-row-start: 2;
+  grid-row-start: 2;
 }
 
 .start-12 {
-    grid-row-start: 4;
+  grid-row-start: 4;
 }
 
 .start-1 {
-    grid-row-start: 5;
+  grid-row-start: 5;
 }
 
 .start-2 {
-    grid-row-start: 6;
+  grid-row-start: 6;
 }
 
 .end-12 {
-    grid-row-end: 4;
+  grid-row-end: 4;
 }
 
 .end-1 {
-    grid-row-end: 5;
+  grid-row-end: 5;
 }
 
 .end-3 {
-    grid-row-end: 7;
+  grid-row-end: 7;
 }
 
 .end-4 {
-    grid-row-end: 8;
+  grid-row-end: 8;
 }
 
 .end-5 {
-    grid-row-end: 9;
+  grid-row-end: 9;
 }
 
 /* // Event */
 
 .title {
-    font-weight: 600;
-    margin-bottom: 0.25rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
 }
 
 .event {
-    border: 1px solid var(--eventBorderColor);
-    border-radius: 5px;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    background: white;
+  border: 1px solid var(--eventBorderColor);
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  background: white;
 }
 
 .space,
 .date {
-    height: 60px
+  height: 60px;
 }
 
 /* // Global / Etc */
 
-body {
-    font-family: system-ui, sans-serif;
-}
-
 .corp-fi {
-    background: var(--eventColor1);
+  background: var(--eventColor1);
+  height: fit-content;
 }
 
 .ent-law {
-    background: var(--eventColor2);
+  background: var(--eventColor2);
+  height: fit-content;
 }
 
 .writing {
-    background: var(--eventColor3);
+  background: var(--eventColor3);
+  height: fit-content;
+  height: fit-content;
 }
 
 .securities {
-    background: var(--eventColor4);
+  background: var(--eventColor4);
+  height: fit-content;
 }
 
 .date {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 1em;
 }
 
 .date-num {
-    font-size: 3rem;
-    font-weight: 600;
-    display: inline;
+  font-size: 3rem;
+  font-weight: 600;
+  display: inline;
+  color: white;
 }
 
 .date-day {
-    display: inline;
-    font-size: 3rem;
-    font-weight: 100;
+  display: inline;
+  font-size: 3rem;
+  font-weight: 100;
+  color: white;
+}
+
+/* GALLERY */
+
+#gallery img {
+  width: 100%;
+  line-height: 1em;
+}
+
+#gallery {
+  line-height: 0;
+}
+
+#social-networks {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
+}
+
+#signup_section {
+  background-image: url('../images/bjjmatform2.jpg');
+  background-size: cover;
+  background-position: 75%;
+  padding: 20px 10% 0 10%;
+  flex-grow: 1;
+}
+
+#signup_bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+#signup_bg > h1 {
+  color: rgb(231, 231, 231);
+}
+
+#signup_bg > h2 {
+  color: rgb(231, 231, 231);
+}
+
+#registration-form {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  padding: 30px;
+}
+
+.text-input {
+  color: rgb(255, 255, 255);
+  background-color: #fafafa00;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+  margin: 5px 0 20px 0;
+  height: 25px;
+  width: 100%;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.join-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 100%;
+  background-color: white;
+  color: black;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 1.8rem;
+  background: #82074a;
+  color: #fff;
+  text-align: center;
 }

@@ -2,231 +2,180 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Meta tags for search engines -->
-  <meta name="description" content="love jiujutsu. Grappling, grapplers, no-gi, bjj">
-  <meta name="keywords" content="sports, combat sports, grapplers, bjj">
-  <title>Grapplers</title>
+  <meta name="description" content="love jiujutsu. Grappling, grapplers, no-gi, bjj" />
+  <meta name="keywords" content="sports, combat sports, grapplers, bjj" />
+  <title>Grappling</title>
   <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/mediaquery.css">
 </head>
 
 <body>
 
   <!-- NAVIGATION BAR -->
-  <div class="topnav">
-    <div id="nav-centered">
-      <h1 id="logo">Grapplers</h1>
-      <div id="links">
+  <section class="topnav">
+    <section id="nav-centered">
+      <h1 id="logo">Grappling</h1>
+      <section id="links">
         <a href="index.html" class="active">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="signup.html">Sign Up</a>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </section>
 
   <!-- MAIN CONTENT -->
   <main>
 
-    <section id="hero">
-      <div class="hero-img">
-        <div class="hero-text">
-          <h1>Learn a new hobby<br>in Roadlake City</h1>
-        </div>
-        <div class="button-center"><button id="button-why" onclick="window.location.href='#reasons'">Tell me
-            more</button></div>
-      </div>
-    </section>
-    
-    <section id="reasons">
-      <div class="container">
-        <div class="question">
-          <h2>Why grappling is for you?</h2>
-        </div>
-        <div class="benefits-img"></div>
-        <div class="benefits-txt">
-          <div>
-            <h3>Exercise while having fun</h3>
-            <p>
-              As a team, you'll craft unforgettable memories, sharing laughter through every twist and
-              turn on the mat.</p>
-          </div>
-          <div>
-            <h3>Full-body strenght</h3>
-            <p>Engage yor entire body and get to know muscles you didnt know existed; it's grap-tastic!</p>
-          </div>
-          <div>
-            <h3>Mental focus</h3>
-            <p>Like chess it requires strategic thinking and adaptability in every move.
-              It's not merely about overpowering your opponent but outsmarting them,
-              turning it into a thrilling mental and physical exercise.</p>
-          </div>
-          <div>
-            <h3>Community</h3>
-            <p>Grappling creates a tight-knit community, bonding individuals through shared challenges and triumphs.</p>
-          </div>
-        </div>
-      </div>
+    <!-- HERO -->
+    <section class="hero-section">
+      <figure class="hero-img" alt="BJJ class, people sitting on the floor, blurry faces in the background.">
+        <section class="hero-text">
+          <h1>Learn a new hobby<br />in Roadlake City</h1>
+        </section>
+        <section class="button-center">
+          <button id="tellmemore-button" onclick="window.location.href='#benefits-section'">
+            Tell me more
+          </button>
+        </section>
+      </figure>
     </section>
 
-    <div class="calendar">
-      <div class="timeline">
-        <div class="spacer"></div>
-        <div class="time-marker">09:00</div>
-        <div class="time-marker">10:00</div>
-        <div class="time-marker">11:00</div>
-        <div class="time-marker">12:00</div>
-        <div class="time-marker">13:00</div>
-        <div class="time-marker">14:00</div>
-        <div class="time-marker">15:00</div>
-        <div class="time-marker">16:00</div>
-        <div class="time-marker">17:00</div>
-        <div class="time-marker">18:00</div>
-      </div>
-      <div class="days">
-        <div class="day mon">
-          <div class="date">
-            <p class="date-num">10</p>
-            <p class="date-day">Mon</p>
-          </div>
-          <div class="events">
-            <div class="event start-2 end-5 securities">
-              <p class="title">Securities Regulation</p>
-              <p class="time">2 PM - 5 PM</p>
-            </div>
-          </div>
-        </div>
-        <div class="day tues">
-          <div class="date">
-            <p class="date-num">11</p>
-            <p class="date-day">Tues</p>
-          </div>
-          <div class="events">
-            <div class="event start-10 end-12 corp-fi">
-              <p class="title">Corporate Finance</p>
-              <p class="time">10 AM - 12 PM</p>
-            </div>
-            <div class="event start-1 end-4 ent-law">
-              <p class="title">Entertainment Law</p>
-              <p class="time">1PM - 4PM</p>
-            </div>
-          </div>
-        </div>
-        <div class="day wed">
-          <div class="date">
-            <p class="date-num">12</p>
-            <p class="date-day">Wed</p>
-          </div>
-          <div class="events">
-            <div class="event start-12 end-1 writing">
-              <p class="title">Writing Seminar</p>
-              <p class="time">11 AM - 12 PM</p>
-            </div>
-            <div class="event start-2 end-5 securities">
-              <p class="title">Securities Regulation</p>
-              <p class="time">2 PM - 5 PM</p>
-            </div>
-          </div>
-        </div>
-        <div class="day thurs">
-          <div class="date">
-            <p class="date-num">13</p>
-            <p class="date-day">Thurs</p>
-          </div>
-          <div class="events">
-            <div class="event start-10 end-12 corp-fi">
-              <p class="title">Corporate Finance</p>
-              <p class="time">10 AM - 12 PM</p>
-            </div>
-            <div class="event start-1 end-4 ent-law">
-              <p class="title">Entertainment Law</p>
-              <p class="time">1PM - 4PM</p>
-            </div>
-          </div>
-        </div>
-        <div class="day fri">
-          <div class="date">
-            <p class="date-num">14</p>
-            <p class="date-day">Fri</p>
-          </div>
-          <div class="events">
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- SCHEDULE -->
-    <div id="times">
-      <div>
-        <h3>Fundamental</h3>
-        <p>Monday</p>
-        <p>Gi 17:30</p>
-        <p>No-Gi 19:00</p>
-        <p>At Zensei Dojo</p>
-      </div>
-      <div>
-        <h3>BJJ all levels</h3>
-        <p>Tuesday</p>
-        <p>Kids Class 17:30</p>
-        <p>Adults 19:00</p>
-        <p>At Zensei Dojo</p>
-      </div>
-      <div>
-        <h3>No-Gi all levels</h3>
-        <p>Wednesday</p>
-        <p>Kids class 17:30</p>
-        <p>Adults 19:15</p>
-        <p>At Zensei Dojo</p>
-      </div>
-      <div>
-        <h3>Intermidiate Mixed Gi/No-Gi</h3>
-        <p>Thursday</p>
-        <p>18.00</p>
-        <p>At Zensei Dojo</p>
-      </div>
-      <div>
-        <h3>Open mat or interval training</h3>
-        <p>Saturday</p>
-        <p>13.00</p>
-        <p>At Zensei Dojo</p>
-      </div>
-    </div>
+    <!-- BENEFITS -->
+    <section id="benefits-section">
+      <section class="benefits-heading">
+        <h1>Why grappling is for you?</h1>
+      </section>
+      <section class="textimg-box">
+        <figure>
+          <figure class="benefits-img" alt="Two women about to roll"></figure>
+        </figure>
+        <section class="benefits-text">
+          <section>
+            <h3>Exercise while having fun</h3>
+            <p>
+              As a team, you'll craft unforgettable memories, sharing laughter
+              through every twist and turn on the mat.
+            </p>
+          </section>
+          <section>
+            <h3>Full-body strenght</h3>
+            <p>
+              Engage yor entire body and get to know muscles you didnt know
+              existed; it's grap-tastic!
+            </p>
+          </section>
+          <section>
+            <h3>Mental focus</h3>
+            <p>
+              Like chess it requires strategic thinking and adaptability in
+              every move. It's not merely about overpowering your opponent but
+              outsmarting them, turning it into a thrilling mental and
+              physical exercise.
+            </p>
+          </section>
+          <section>
+            <h3>Community</h3>
+            <p>
+              Grappling creates a tight-knit community, bonding individuals
+              through shared challenges and triumphs.
+            </p>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <!-- CALENDAR -->
+    <section class="calendar-section">
+      <figure class="calendar-bgimg" alt="BJJ class, people sitting on the floor, blurry faces in the background.">
+        <section class="calendar">
+          <section class="days">
+            <section class="day mon">
+              <section class="date">
+                <p class="date-num">10</p>
+                <p class="date-day">Mon</p>
+              </section>
+              <section class="events">
+                <section class="event start-2 end-5 securities">
+                  <p class="title">Fundamentals</p>
+                  <p class="details">Gi</p>
+                  <p class="time">17:30 - 19:00</p>
+                  <p class="details">No-Gi</p>
+                  <p class="time">19:00</p>
+                </section>
+              </section>
+            </section>
+            <section class="day tues">
+              <section class="date">
+                <p class="date-num">11</p>
+                <p class="date-day">Tues</p>
+              </section>
+              <section class="events">
+                <section class="event start-10 end-12 corp-fi">
+                  <p class="title">BJJ all levels</p>
+                  <p class="details">Kids</p>
+                  <p class="time">17:30</p>
+                  <p class="details">Adults</p>
+                  <p class="time">19:00</p>
+                </section>
+              </section>
+            </section>
+            <section class="day wed">
+              <section class="date">
+                <p class="date-num">12</p>
+                <p class="date-day">Wed</p>
+              </section>
+              <section class="events">
+                <section class="event start-12 end-1 writing">
+                  <p class="title">No-Gi all levels</p>
+                  <p class="details">Kids</p>
+                  <p class="time">17:30</p>
+                  <p class="details">Adults</p>
+                  <p class="time">19:15</p>
+                </section>
+              </section>
+            </section>
+            <section class="day thurs">
+              <section class="date">
+                <p class="date-num">13</p>
+                <p class="date-day">Thurs</p>
+              </section>
+              <section class="events">
+                <section class="event start-1 end-4 ent-law">
+                  <p class="title">Open mat or interval training</p>
+                  <p class="time">13:00</p>
+                </section>
+              </section>
+            </section>
+            <section class="day fri">
+              <section class="date">
+                <p class="date-num">14</p>
+                <p class="date-day">Fri</p>
+              </section>
+              <section class="events"></section>
+            </section>
+          </section>
+        </section>
+      </figure>
+    </section>
 
   </main>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
+  
   <footer>
-    <ul id="social-networks">
-      <li>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-          aria-label="Visit our facebook page (opens in a newe tab)"><i class="fa-brands fa-facebook"></i></a>
-      </li>
-
-
-      <li>
-        <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-          aria-label="Visit our twitter page (opens in a newe tab)"><i class="fa-brands fa-x-twitter"></i></a>
-      </li>
-
-
-      <li>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-          aria-label="Visit our instagram page (opens in a new tab)"><i class="fa-brands fa-instagram"></i></a>
-      </li>
-
-
-      <li>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-          aria-label="Visit our YouTube page (opens in a new tab)"><i class="fa-brands fa-square-youtube"></i></a>
-      </li>
-
-    </ul>
-
+    <section id="footer-section">
+      <div class="footer">
+        Born to grapple. Powered By Water. ®2024
+      </div>
+    </section>
   </footer>
 
 </body>
