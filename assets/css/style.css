@@ -390,9 +390,34 @@ main {
 
 /* FOOTER */
 
-.footer {
+/* .footer {
   padding: 1.8rem;
   background: #82074a;
   color: #fff;
   text-align: center;
+} */
+
+#social-networks {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  background-color: #2d0808;
+}
+
+#social-networks i {
+  font-size: 2.3rem;
+  color: #d97373;
+}
+
+#social-networks li {
+  padding-right: 0.5rem;
+  padding-left: 1rem;
+}
+
+.footer-text {
+  color: white;
+  padding-left: 77vw;
+  align-content: center;
 }
