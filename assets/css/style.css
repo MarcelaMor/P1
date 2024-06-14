@@ -126,8 +126,8 @@ main {
   font-size: 2.3rem;
   font-family: 'Carter One', system-ui;
   transition-duration: 0.3s;
-  width: 30vw;
-  height: 11vw;
+  width: 20vw;
+  height: 7vw;
 }
 
 #button-why:hover {
@@ -321,42 +321,6 @@ main {
   line-height: 0;
 }
 
-#social-networks {
-  text-align: center;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-evenly;
-  list-style-type: none;
-}
-
-#social-networks i {
-  font-size: 160%;
-  padding: 5%;
-  color: #3a3a3a;
-}
-
-#signup_section {
-  background-image: url('../images/bjjmatform2.jpg');
-  background-size: cover;
-  background-position: 75%;
-  padding: 20px 10% 0 10%;
-  flex-grow: 1;
-}
-
-#signup_bg {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  margin-bottom: 20px;
-}
-
-#signup_bg > h1 {
-  color: rgb(231, 231, 231);
-}
-
-#signup_bg > h2 {
-  color: rgb(231, 231, 231);
-}
-
 #registration-form {
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
@@ -389,13 +353,6 @@ main {
 }
 
 /* FOOTER */
-
-/* .footer {
-  padding: 1.8rem;
-  background: #82074a;
-  color: #fff;
-  text-align: center;
-} */
 
 #social-networks {
   text-align: center;

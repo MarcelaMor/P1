@@ -15,6 +15,7 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/mediaquery.css">
+  <link rel="stylesheet" href="assets/css/join.css">
   <script src="https://kit.fontawesome.com/c1fc74be03.js" crossorigin="anonymous"></script>
 </head>
 
@@ -37,8 +38,9 @@
   <main>
     <section id="signup_section">
       <div id="signup_bg">
-        <h1><i class="fa-solid fa-handshake-simple"></i>ONE OF US! ONE OF US!</h1>
-        <h2>Come and roll with us</h2>
+        <div class="signup-text">
+          <p class="">JOIN US!<i class="fa-solid fa-handshake-simple"></i></p>
+        </div>
         <section id="registration">
           <form id="registration-form" method="POST" action="https://formdump.codeinstitute.net">
             <label for="fname">First Name</label>
@@ -49,6 +51,8 @@
             <input type="text" id="email" name="email_address" class="text-input" required><br><br>
             <h4>What's your rolling preference?</h4><br>
             <div class="radio-buttons">
+              <div><label for="kids">Kids</label><input type="radio" name="rolling_preference" id="kids"
+                  value="kids_prefered" required></div>
               <div><label for="gi">Gi</label><input type="radio" name="rolling_preference" id="gi" value="gi_prefered"
                   required></div>
               <div><label for="nogi">No-Gi</label><input type="radio" name="rolling_preference" id="nogi"
