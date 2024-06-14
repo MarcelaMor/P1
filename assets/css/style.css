@@ -85,10 +85,6 @@ main {
 
 /* HERO SECTION */
 
-.hero-section {
-  height: 100vw;
-}
-
 .hero-img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../images/bjjhero.jpg');
@@ -148,7 +144,7 @@ main {
   justify-content: center;
 }
 
-.benefits-heading > h1 {
+.benefits-heading > h2 {
   font-family: 'Carter One';
   font-size: xxx-large;
   margin-bottom: 10vw;
